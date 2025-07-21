@@ -43,16 +43,27 @@
 .fact-number{font-weight: 600;font-size: 2.8rem;margin-top: 10px;margin-bottom: 20px;}
 .fact-name{font-size: 1.24rem;font-weight: 600;margin-top: 10px;}
 .fact-description{max-width: 540px;}
+/* sponser related */
+.sponser-info{max-width: 540px;margin: 50px auto;text-align: center;}
+.sponser-companies {display: grid;
+grid-template-columns: repeat(5,1fr);align-content: center;gap: 50px;align-items: center;}
+.sponser-companies img{filter: grayscale(100%);}
+.sponser-tittle{font-size: 2.5rem;font-weight: bold;}
 /* responsive media quary */
 @media screen and (max-width:576px) {.navbar,
     .nav-links,
     .teams
     {flex-direction: column;}
-    .team-imgs{grid-template-columns:repeat(1,1fr) ;}
-.our-features{margin-left: 20px;}
+    .team-imgs,
+    .facts-container,
+    .sponser-companies
+    {grid-template-columns:repeat(1,1fr) ;}
+.our-features,.sponser-companies{margin-left: 20px;}
+.facts-container{justify-items: center;}
     
 }
 @media screen and (max-width:992px) and (min-width:576px) {
     .teams{flex-direction: column;}
     .our-features{margin: 50px auto;}
+    .sponser-companies,.facts-container{grid-template-columns: repeat(2,1fr);gap: 50px;justify-items: center;}
 }
