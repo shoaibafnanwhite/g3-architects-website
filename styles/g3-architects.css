@@ -41,8 +41,13 @@
 .fact-card{border: 1px solid #FF900E;width: 240px;height: 240px;border-radius: 8px;text-align: center;align-items: center;justify-content: center;}
 .facts-container{display: grid;grid-template-columns: repeat(4,1fr);}
 .fact-number{font-weight: 600;font-size: 2.8rem;margin-top: 10px;margin-bottom: 20px;}
-.fact-name{font-size: 1.24rem;font-weight: 600;margin-top: 10px;}
-.fact-description{max-width: 540px;}
+.fact-name{font-size: 1.24rem;font-weight: 600;margin-top: 10px;}.fact-description{max-width: 540px;}
+
+/* features -section-related styles */
+.features{gap: 140px;align-items: center;}
+#featues-section-tittle{border-left: 5px solid #FF900E;padding-left: 21px;}
+.feature-card .feature-tittle{font-weight: 600;font-size: 1.25rem;;}
+.feature-card{padding: 30px;box-shadow: 0 4px 30px 0 rgba(0,0,0,0.6);margin-bottom: 20px;border-radius: 8px;margin-top: 0;margin-bottom: 0;}
 /* sponser related */
 .sponser-info{max-width: 540px;margin: 50px auto;text-align: center;}
 .sponser-companies {display: grid;
